@@ -46,7 +46,7 @@ export default async function handler(req, res) {
       });
 
       // Send the file URL to Zapier
-      await fetch(https://hooks.zapier.com/hooks/catch/22158922/2eds5v9/, {
+      await fetch('https://hooks.zapier.com/hooks/catch/22158922/2eds5v9/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
