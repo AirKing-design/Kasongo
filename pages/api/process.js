@@ -6,7 +6,7 @@ export default async function handler(req, res) {
   const form = new formidable.IncomingForm();
   form.parse(req, async (err, fields, files) => {
     if (err) return res.status(500).send('Error');
-    await fetch(https://hooks.zapier.com/hooks/catch/22158922/2ehxhd6/, {
+    await fetch(https://hooks.zapier.com/hooks/catch/22158922/2edtg9u/, {
       method: 'POST',
       body: JSON.stringify({
         cvFile: files.cvFile ? files.cvFile.filepath : '',
