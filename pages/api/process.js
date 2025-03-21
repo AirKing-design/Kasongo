@@ -5,6 +5,7 @@ import fs from 'fs';
 export const config = { api: { bodyParser: false } };
 
 export default async function handler(req, res) {
+  console.log('Request method:', req.method);
   if (req.method !== 'POST') {
     return res.status(405).send('Method Not Allowed');
   }
